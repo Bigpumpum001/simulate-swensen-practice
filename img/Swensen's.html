@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5501/register.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Swensen's</title>
+    <link rel="icon" href="./Swensen&#39;s_files/swensenslogo.svg" type="image/png">
+
+    <!-- boxicons -->
+    <link href="./Swensen&#39;s_files/boxicons.min.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link rel="stylesheet" href="./Swensen&#39;s_files/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMn4l1I1jT5fF3s2z3Uq7nO1/4t4p60bTp40gK" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+    <!-- font sarabun -->
+    <link href="./Swensen&#39;s_files/css2" rel="stylesheet">
+    <link href="./Swensen&#39;s_files/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Sarabun", sans-serif;
+        }
+
+        body {
+            background-color: #F2F4F7;
+        }
+
+        .nav-pad-x {
+            padding: 0.5rem 19rem;
+            display: flex;
+
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+
+
+
+        .footer {
+            background-color: #101828;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .btn-nav-radius {
+            border-radius: 3rem;
+        }
+
+        .nav-right-gap {
+            gap: 1rem;
+        }
+
+        .footer-font {
+            font-size: 0.7rem;
+        }
+
+        .container-header {
+            margin-top: 4rem;
+            /* padding-bottom: 3rem; */
+            /* margin-bottom: 2rem; */
+        }
+
+        .cake-padding-left {
+            padding-left: 8rem;
+        }
+
+        .display-flex-just-align-center {
+            display: flex;
+            justify-content: flex-end;
+             align-items: center;
+             gap: 0.5rem;
+        }
+        .btn-back{
+            border:none;
+        }
+        .btn-login{
+            
+            border-radius: 2rem;
+        }
+        .existing-member{
+            margin-top: 1rem;
+        }
+        .btn-create-profile{
+            background-color: #D9DDE3;
+            border-radius: 2rem;
+            border: none;
+            height: 4.5rem;
+        }
+        .form-left{
+            box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+            border-radius: 1rem;
+        }
+        .form-control{
+            height: 3rem;
+        }
+    </style>
+<script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js" async=""></script><link rel="stylesheet" type="text/css" href="chrome-extension://igiofjnckcagmjgdoaakafngegecjnkj/debugCSS.min.css" id="debugCSS"><script type="text/javascript" src="chrome-extension://igiofjnckcagmjgdoaakafngegecjnkj/debugCSS.js" id="debugJS"></script></head>
+
+<body class="vsc-initialized" cz-shortcut-listen="true">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white nav-pad-x fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5501/register.html#"><img src="./Swensen&#39;s_files/swensenslogo.svg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto nav-right-gap">
+                    <!-- <li class="nav-item"><a class="nav-link active" href="#">Home</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5501/register.html#"><i class="bx bx-shopping-bag"></i></a></li>
+                    <li class="nav-item "><button class="btn btn-lg btn-danger btn-outline-danger btn-nav-radius text-white" href="#">เข้าสู่ระบบ / ลงทะเบียน</button></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5501/register.html#"><i class="fa-thin fa-globe"></i>
+                            <p>TH</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container container-header">
+        <div class="row ">
+            <div class="d-flex row-6">
+                <div class="d-flex flex-column col-lg-6 p-5">
+                    <div class="col-lg-12 d-flex justify-content-between mb-3">
+                        <div class="col-5 d-flex">
+                            <button class="btn btn-outline-secondary border-box-0 btn-back text-black fs-5">&lt; กลับ</button>
+                        </div>
+                        <div class="col-7 display-flex-just-align-center ">
+                            
+                            <p class="existing-member fw-bold">มีบัญชีสมาชิกอยู่แล้วใช่หรือไม่</p>
+                            <button class="btn btn-sm btn-danger bg-white text-danger btn-outline-danger btn-login">เข้าสู่ระบบ</button>
+                        </div>
+                    </div>
+                    <div class="col-12 form-col p-5  bg-white form-left">
+
+                        <div class="form-container p-1">
+                            <h2 class=" mb-4">สมัครสมาชิกฟรี! รับสิทธิประโยชน์และส่วนลดมากมาย</h2>
+                            <form>
+                                <div class="col-12 d-flex gap-3">
+                                    <div class="mb-3 col-6">
+                                        <label for="firstName" class="form-label">ชื่อ<span style="color: red;">*</span></label>
+                                        <input type="text" class="form-control border-1 fs-6" id="firstName" placeholder="ชื่อ">
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <label for="lastName" class="form-label">นามสกุล<span style="color: red;">*</span></label>
+                                        <input type="text" class="form-control border-1 fs-6" id="lastName" placeholder="นามสกุล">
+                                    </div>
+                                </div>
+                                <div class="col d-flex gap-3">
+                                    <div class="mb-3 col-6">
+                                        <label for="email" class="form-label">อีเมล<span style="color: red;">*</span></label>
+                                        <input type="email" class="form-control border-1 fs-6" id="email" placeholder="อีเมล">
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <label for="password" class="form-label">รหัสผ่าน<span style="color: red;">*</span></label>
+                                        <input type="password" class="form-control border-1 fs-6" id="password" placeholder="รหัสผ่าน">
+                                    </div>
+                                </div>
+                                <div class="col d-flex gap-3">
+                                    <div class="mb-3 col-6">
+                                        <label for="birthDate" class="form-label">วันเกิด<span style="color: red;">*</span></label>
+                                        <input type="date" class="form-control border-1 fs-6" id="birthDate">
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <label for="phoneNumber" class="form-label">เบอร์โทรศัพท์<span style="color: red;">*</span></label>
+                                        <input type="tel" class="form-control border-1 fs-6" id="phoneNumber" placeholder="เบอร์โทรศัพท์">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">เพศ<span style="color: red;">*</span></label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                            <label class="form-check-label" for="male">ชาย</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                            <label class="form-check-label" for="female">หญิง</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="notSpecified" value="notSpecified">
+                                            <label class="form-check-label" for="notSpecified">ไม่ระบุ</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsCheck">
+                                    <label class="form-check-label" for="termsCheck">ฉันได้อ่านและยอมรับ <span style="color: #2578E5; text-decoration: underline; text-decoration-thickness: 2px;">ข้อกำหนดการใช้งาน</span> และ <span style="color: #2578E5; text-decoration: underline; text-decoration-thickness: 2px;">นโยบายความเป็นส่วนตัว</span> ของสเวนเซ่นส์</label>
+                                        
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsCheck">
+                                    <label class="form-check-label" for="termsCheck">ฉันยินยอมรับข้อมูลข่าวสาร กิจกรรมส่งเสริมการขายต่างๆ จากสเวนเซ่นส์และ<span style="color: #2578E5; text-decoration: underline; text-decoration-thickness: 2px;">บริษัทในเครือ</span> โดยเราจะเก็บข้อมูลของท่านไว้เป็นความลับ สามารถศึกษาเงื่อนไขหรือข้อตกลง <span style="color: #2578E5; text-decoration: underline; text-decoration-thickness: 2px;">นโยบายความเป็นส่วนตัว</span> เพิ่มเติมได้ที่เว็บไซต์ของบริษัทฯ</label>
+                                        
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn-create-profile btn btn-lg btn-secondary btn-outline-secondary">สร้างบัญชี</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 image-col w-50 cake-padding-left">
+                    <img class="img-fluid h-100" src="./Swensen&#39;s_files/register-banner.webp" alt="Cakes">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center">
+                <!-- Logo Column -->
+                <div class="col-lg-2 col-md-3 mb-3 ">
+                    <img src="./Swensen&#39;s_files/swensens_footer.png" alt="Swensen&#39;s Logo" class="img-fluid">
+                </div>
+
+                <!-- Links Column -->
+                <div class="col-lg-7 col-md-6 mb-3">
+                    <a href="http://127.0.0.1:5501/register.html#">เกี่ยวกับเรา</a>
+                    <a href="http://127.0.0.1:5501/register.html#">สินค้าของเรา</a>
+                    <a href="http://127.0.0.1:5501/register.html#">บัตรของขวัญ</a>
+                    <a href="http://127.0.0.1:5501/register.html#">คำถามที่พบบ่อย</a>
+                    <a href="http://127.0.0.1:5501/register.html#">ข้อตกลงในการใช้งาน</a>
+                    <a href="http://127.0.0.1:5501/register.html#">นโยบายความเป็นส่วนตัว</a>
+                </div>
+
+                <!-- Social Icons Column -->
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <div class="social-icons">
+                        <a href="http://127.0.0.1:5501/register.html#"><img src="./Swensen&#39;s_files/Facebook-f_Logo-Blue-Logo.wine.svg" alt="Facebook"></a>
+                        <a href="http://127.0.0.1:5501/register.html#"><img src="./Swensen&#39;s_files/Instagram-Logo.wine.svg" alt="Instagram"></a>
+                        <a href="http://127.0.0.1:5501/register.html#"><img src="./Swensen&#39;s_files/Line_(software)-Logo.wine.svg" alt="LINE"></a>
+                        <a href="http://127.0.0.1:5501/register.html#"><img src="./Swensen&#39;s_files/TikTok-Icon-White-Logo.wine.svg" alt="TikTok"></a>
+                        <a href="http://127.0.0.1:5501/register.html#"><img src="./Swensen&#39;s_files/appstore.svg" alt="App Store"></a>
+                        <a href="http://127.0.0.1:5501/register.html#"><img src="./Swensen&#39;s_files/Google_Play_Store_badge_EN.svg.webp" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Row -->
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0 footer-font ">Copyright © Swensen1112.com. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./Swensen&#39;s_files/bootstrap.bundle.min.js.ดาวน์โหลด"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<div id="debugCSSInfoBar"><p>Hovered Element Detail(s)= { Element Type: <b> body</b>; Class(es) Applied: <b> vsc-initialized</b>; Element Id: <b> </b>; }</p></div></body><template id="transover-popup-template"></template><template id="transover-tat-popup-template"></template></html>

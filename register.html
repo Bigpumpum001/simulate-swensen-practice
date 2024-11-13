@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Swensen's</title>
+    <link rel="icon" href="img\swensenslogo.svg" type="image/png">
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- font awesome -->
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMn4l1I1jT5fF3s2z3Uq7nO1/4t4p60bTp40gK" crossorigin="anonymous">
+
+
+    <!-- font sarabun -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+        <!-- font kanit -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
+<link rel="stylesheet" href="css\register.css">
+ 
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white nav-pad-x fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img\swensenslogo.svg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto nav-right-gap">
+            
+
+                    <li class="nav-item "><button  onclick="window.location.href='login.html'"
+                            class="btn btn-lg btn-danger btn-outline-danger btn-nav-radius text-white"
+                            href="login.html">เข้าสู่ระบบ / ลงทะเบียน</button></li>
+                    <li class="nav-item"><a class="nav-link  d-flex align-items-center gap-2 fw-bold fs-5" href="#"><i
+                                class="bx bx-globe "></i>
+                            <p style="transform: translateY(25%);">TH</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="display-to-block"><p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p></div>
+        </div>
+    </nav>
+    <div class="container container-header">
+        <div class="row ">
+            <div class="d-flex">
+                <div class="d-flex flex-column col-lg-6 p-5 formpaddinglr">
+                    <div class="col-lg-12 mb-3 display-to-none back-create">
+                        <div class="col-4 d-flex">
+                            <button class="btn btn-outline-secondary border-box-0 btn-back text-black fs-5">&lt; กลับ</button>
+                        </div>
+                        <div class="col-8 display-flex-just-align-center ">
+                            
+                            <p class="existing-member  fs-5">มีบัญชีสมาชิกอยู่แล้วใช่หรือไม่</p>
+                            <button class="btn btn-lg btn-white  btn-outline-danger btn-login" onclick="window.location.href='login.html'">เข้าสู่ระบบ</button>
+                        </div>
+                    </div>
+                    <div class="col-12 form-col p-5  bg-white form-left">
+
+                        <div class="form-container p-1">
+                            <div class="col-4 display-to-flex display-to-none-back pb-3 ">
+                                <button class="btn btn-outline-secondary border-box-0 btn-back text-black fs-5">&lt;
+                                    กลับ</button>
+                            </div>
+                            <h2 class=" mb-4">สมัครสมาชิกฟรี! รับสิทธิประโยชน์และส่วนลดมากมาย</h2>
+                            <form>
+                                <div class="col-12 d-flex gap-3">
+                                    <div class="mb-3 col-6">
+                                        <label for="firstName" class="form-label">ชื่อ<span style="color: red;">*</span></label>
+                                        <input type="text" class="form-control border-1 fs-6" id="firstName" placeholder="ชื่อ">
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <label for="lastName" class="form-label">นามสกุล<span style="color: red;">*</span></label>
+                                        <input type="text" class="form-control border-1 fs-6" id="lastName" placeholder="นามสกุล">
+                                    </div>
+                                </div>
+                                <div class="col d-flex gap-3">
+                                    <div class="mb-3 col-6">
+                                        <label for="email" class="form-label">อีเมล<span style="color: red;">*</span></label>
+                                        <input type="email" class="form-control border-1 fs-6" id="email" placeholder="อีเมล">
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <label for="password" class="form-label">รหัสผ่าน<span style="color: red;">*</span></label>
+                                        <input type="password" class="form-control border-1 fs-6" id="password"
+                                            placeholder="รหัสผ่าน">
+                                    </div>
+                                </div>
+                                <div class="col d-flex gap-3">
+                                    <div class="mb-3 col-6">
+                                        <label for="birthDate" class="form-label">วันเกิด<span style="color: red;">*</span></label>
+                                        <input type="date" class="form-control border-1 fs-6" id="birthDate">
+                                    </div>
+                                    <div class="mb-3 col-6">
+                                        <label for="phoneNumber" class="form-label">เบอร์โทรศัพท์<span style="color: red;">*</span></label>
+                                        <input type="tel" class="form-control border-1 fs-6" id="phoneNumber"
+                                            placeholder="เบอร์โทรศัพท์">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">เพศ<span style="color: red;">*</span></label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="male"
+                                                value="male">
+                                            <label class="form-check-label" for="male">ชาย</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="female"
+                                                value="female">
+                                            <label class="form-check-label" for="female">หญิง</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="notSpecified"
+                                                value="notSpecified">
+                                            <label class="form-check-label" for="notSpecified">ไม่ระบุ</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsCheck">
+                                    <label class="form-check-label" for="termsCheck">ฉันได้อ่านและยอมรับ <span style="color: #2578E5; text-decoration: underline; text-decoration-thickness: 2px;">ข้อกำหนดการใช้งาน</span> และ <span style="color: #2578E5; text-decoration: underline; text-decoration-thickness: 2px;">นโยบายความเป็นส่วนตัว</span> ของสเวนเซ่นส์</label>
+                                        
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsCheck">
+                                    <label class="form-check-label" for="termsCheck">ฉันยินยอมรับข้อมูลข่าวสาร กิจกรรมส่งเสริมการขายต่างๆ จากสเวนเซ่นส์และ<span style="color: #2578E5; text-decoration: underline; text-decoration-thickness: 2px;">บริษัทในเครือ</span> โดยเราจะเก็บข้อมูลของท่านไว้เป็นความลับ สามารถศึกษาเงื่อนไขหรือข้อตกลง <span style="color: #2578E5; text-decoration: underline; text-decoration-thickness: 2px;">นโยบายความเป็นส่วนตัว</span> เพิ่มเติมได้ที่เว็บไซต์ของบริษัทฯ</label>
+                                        
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn-create-profile btn btn-lg btn-secondary btn-outline-secondary" onclick="window.location.href='login.html'">สร้างบัญชี</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 image-col  cake-padding-left display-to-none">
+                    <img class="img-fluid h-100" src="img\register-banner.webp" alt="Cakes">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    
+    <footer class="footer">
+        <div class="container container-custom">
+            <div class="row text-center d-flex flex-column">
+             
+                <div class="d-flex align-items-center gap-2 padding-l-r-custom0 ">
+                    <div class="col-lg-2 col-md-2 mb-1 col-custom">
+                        <img src="img\swensens_footer.png" alt="Swensen's Logo" class=" w-100">
+                    </div>
+
+              
+                    <div class="col-lg-7 col-md-6 ">
+                        <a href="#">เกี่ยวกับเรา</a>
+                        <a href="#">สินค้าของเรา</a>
+                        <a href="#">บัตรของขวัญ</a>
+                        <a href="#">คำถามที่พบบ่อย</a>
+                        <a href="#">ข้อตกลงในการใช้งาน</a>
+                        <a href="#">นโยบายความเป็นส่วนตัว</a>
+                        
+                    </div>
+
+                 
+                    <div class="col-lg-2 col-md-3 mb-1 social-contain-custom">
+                        <div class="social-icons  d-flex ">
+                            <a href="#"><img src="img\Facebook-f_Logo-Blue-Logo.wine.svg" alt="Facebook"></a>
+                            <a href="#"><img src="img\Instagram-Logo.wine.svg" alt="Instagram"></a>
+                            <a href="#"><img src="img\Line_(software)-Logo.wine.svg" alt="LINE"></a>
+                            <a href="#"><img src="img\TikTok-Icon-White-Logo.wine.svg" alt="TikTok"></a>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="social-icons  d-flex align-items-center gap-2">
+                            <a href="#"><img src="img\app-store.webp" alt="App Store"></a>
+                            <a href="#"><img src="img\google-play.webp" alt="Google Play"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col text-center">
+                    <p class="mb-0 footer-font ">เว็บไซต์นี้จัดทำขึ้นเพื่อการฝึกฝนทักษะเท่านั้น มิได้มีวัตถุประสงค์ทางการค้า</p>
+                </div>
+           
+             
+            </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

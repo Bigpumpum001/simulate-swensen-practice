@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Swensen's</title>
+    <link rel="icon" href="img\swensenslogo.svg" type="image/png">
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMn4l1I1jT5fF3s2z3Uq7nO1/4t4p60bTp40gK" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    link
+    <!-- font sarabun -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font kanit -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+<!-- custom css -->
+<link rel="stylesheet" href="css\index.css">
+ 
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white nav-pad-x fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img\swensenslogo.svg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="display-none" id="openCart"><a class="nav-link fw-bold fs-2" href="#"><i
+                        class='bx bx-shopping-bag'></i></a></div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto nav-right-gap">
+
+
+                    <li class="nav-item" id="openCart"><a class="nav-link fw-bold fs-2" href="#"><i
+                                class='bx bx-shopping-bag'></i></a></li>
+
+                    <li class="nav-item " data-bs-toggle="modal" data-bs-target="#exampleModal2"><button
+                            class="btn btn-lg btn-danger btn-outline-danger btn-nav-radius text-white"
+                            href="#">เข้าสู่ระบบ / ลงทะเบียน</button></li>
+
+                    <li class="nav-item"><a class="nav-link  d-flex align-items-center gap-2 fw-bold fs-5" href="#"><i
+                                class="bx bx-globe "></i>
+                            <p style="transform: translateY(25%);">TH</p>
+                        </a></li>
+                </ul>
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content d-flex p-4">
+
+                            <div class="modal-detail">
+                                <div class="modal-header d-flex ">
+                                    <div class="form-container p-1">
+                                        <h2 class=" mb-4">ยินดีต้อนรับสมาชิก Swensen's
+                                            เข้าสู่ระบบแล้วเริ่มสั่งไอศกรีมกันเลย!</h2>
+                                        <form>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                            <div class="col-12 d-flex flex-column pt-3">
+
+                                                <label for="email" class="form-label">อีเมล<span
+                                                        style="color: red;">*</span></label>
+                                                <input type="email" class="form-control border-1 fs-6 form-control-lg"
+                                                    id="email" placeholder="อีเมล">
+
+
+                                            </div>
+                                            <div class="col-12 d-flex flex-column pt-3">
+
+                                                <label for="password" class="form-label">รหัสผ่าน<span
+                                                        style="color: red;">*</span></label>
+
+                                                <div class="input-group mb-3 password-wrapper">
+                                                    <input type="password"
+                                                        class="form-control border-1 fs-6 form-control-lg" id="password"
+                                                        placeholder="รหัสผ่าน">
+                                                    <i class="fa fa-eye-slash " id="togglePassword"
+                                                        style="cursor: pointer; font-size: 1.5rem;"></i>
+                                                </div>
+
+
+
+
+                                            </div>
+                                            <button type=""
+                                                class="btn btn-sm border-0 text-primary mt-3 btn-outline-secondary fs-6">ลืมรหัสผ่าน
+                                                ?</button>
+                                            <div class="col-12 d-flex flex-column pt-3">
+                                                <button type="submit"
+                                                    class="btn-login-profile btn btn-lg btn-secondary btn-outline-secondary"
+                                                    onclick="window.location.href='index.html'">เข้าสู่ระบบ</button>
+                                            </div>
+                                            <div
+                                                class="col-12 d-flex pt-3 align-items-center justify-content-center gap-2">
+                                                <p>ยังไม่มีบัญชีใช่หรือไม่</p><a href="register.html">
+                                                    <p class="text-primary">สร้างบัญชี</p>
+                                                </a>
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <button class="display-to-none cart-icon btn btn-lg btn-danger btn-outline-danger ">
+        <div class="cart-icon-text d-flex flex-column"><i class="bx bx-shopping-bag"></i>
+            <p>ตะกร้า</p></i>
+        </div>
+    </button>
+    <!-- รายละเอียดของ Navbar -->
+    <div class="col-10 nav-details  flex-column p-4">
+        <button id="closeNav"
+            class="btn btn-dark btn-outline-secondary text-white btn-sm rounded-pill d-flex align-items-center btn-nav-details-close"><i
+                class='bx bx-x fs-2'></i></button>
+                <div class="col-12 mt-5 ">
+                    <p class="fs-4">Login to begin your ice cream journey</p>
+                  </div>
+                  <div class="col-12 p-2 ">
+                    <button class=" gap-3 text-black fs-5 col-12 border-0 btn btn-outline-secondary  d-flex text-start"> <i class='bx bxs-notepad'></i> <p>คำสั่งซื้อและซื้ออีกครั้ง</p></button>
+                  </div>
+                  <div class="col-12 p-2  ">
+                    <button class="gap-3 text-black fs-5 col-12 border-0 btn btn-outline-secondary  d-flex text-start"> <i class='bx bxs-user'></i><p>โปรไฟล์</p></button>
+                  </div>
+                  <div class="col-12 p-2">
+                    <button class="text-black fs-5 col-12 border-0 btn btn-outline-secondary  d-flex text-start"> เปลี่ยนรหัสผ่าน</button>
+                  </div>
+                  <div class="col-12 p-2">
+                    <button class="text-black fs-5 col-12 border-0 btn btn-outline-secondary  d-flex text-start"> บัตรเครดิตของฉัน</button>
+                  </div>
+                  <div class="col-12 p-2 ">
+                    <button class="text-black fs-5 col-12 border-0 btn btn-outline-secondary  d-flex text-start"> สมุดที่อยู่</button>
+                  </div>
+                  <div class="col-12 p-2">
+                    <button class=" text-black fs-5 col-12 border-0 btn btn-outline-secondary  d-flex text-start"> ภาษา - TH</button>
+                  </div>
+                  <div class="col-12 p-2">
+                    <button class="btn-lg rounded-pill col-12 btn btn-danger gap-2 btn-outline-danger text-white" onclick="window.location.href='login.html'"><i class='bx bxs-user'></i>เข้าสู่ระบบ / ลงทะเบียน</button>
+                  </div>
+                </div>
+
+
+    </div>
+    <div class="navbar-backdrop">
+
+    </div>
+    <!-- รายละเอียดของตะกร้า -->
+    <div class="cart-details align-items-center text-center justify-content-center">
+        <button id="closeCart"
+            class="btn btn-dark btn-outline-secondary text-white btn-sm rounded-pill d-flex align-items-center btn-cart-details-close"><i
+                class='bx bx-x fs-2'></i></button>
+        <div class="row ">
+            <div class="col d-flex flex-column">
+                <i style="font-size: 4rem;" class='bx bx-cart-add text-secondary'></i>
+                <p class="text-secondary">เริ่มเพิ่มสินค้าลงในรถเข็นของคุณ</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="container delivery">
+
+            <div class=" pt-5 py-3">
+
+                <div class="container  d-flex align-items-center menu-delivery">
+
+                    <div class="col-auto">
+                        <p class="fw-bold delivery-to fs-5">ไปส่งที่:</p>
+                    </div>
+
+                    <div class="dropdown w-100 d-flex align-items-center " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">
+
+                        <button class=" fs-5 gap-2 pl-0d9r  d-flex align-items-center ">
+
+                            <i style="transform: translateY(-30%);" class="bx bx-map"></i>
+                            <p class="">เลือกที่อยู่สำหรับจัดส่ง</p>
+
+                            <i class='fas fa-caret-up triangle'></i>
+                        </button>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content d-flex p-4">
+
+                            <div class="modal-detail">
+                                <div class="modal-header d-flex ">
+                                    <p class="modal-title fs-4 fw-bold" id="exampleModalLabel">เลือกที่อยู่สำหรับจัดส่ง
+                                    </p>
+
+                                </div>
+                                <div class="modal-header d-flex justify-content-between">
+                                    <p class="modal-title fs-5" id="exampleModalLabel">ที่อยู่ที่บันทึกไว้</p>
+                                    <div class="choose-from-map text-primary d-flex gap-2 "
+                                        style="transform: translateY(10%);">
+                                        <i style="transform: translateY(15%);"
+                                            class='bx bx-map-alt bx-flip-vertical'></i>
+                                        <p class="fs-5">เลือกจากแผนที่</p>
+                                    </div>
+                                </div>
+                                <div class="modal-header d-flex align-items-center justify-content-center">
+                                    <img style="width: 25%;"
+                                        src="https://www.swensens1112.com/_next/image?url=%2Fimages%2Fempty-address-list.png&w=128&q=75">
+                                </div>
+                                <div class="modal-header d-flex align-items-center justify-content-center">
+                                    <p class="fs-5 text-secondary">ไม่มีที่อยู่ที่บันทึกไว้</p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" text-white text-center dayPromotion py-0 d-flex">
+
+                <img src="img\banner_sw-banner (1).webp">
+                <div class="dot-carousel-indicators3">
+                    <button class="active" onclick="goToSlide(0)"></button>
+                </div>
+            </div>
+
+          
+            <section class="container my-4">
+                <h3 class=" mb-4 fw-bold fs-2">โปรโมชั่น</h3>
+                <div class="row">
+
+                    <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                        <div class="card rounded-top">
+                            <img src="img\promotion1.webp" class="card-img-top" alt="Ice Cream 1">
+                            <div class="card-body ">
+                                <h5 class="card-title text-danger ">฿499</h5>
+                                <p class="card-text fw-bold fs-5">ไอศกรีม ควอท 199 บาท สำหรับลูกค้าทุกท่าน</p>
+
+                                <div class="about-card-layer col-12">
+                                    <div class="container ">⠀</div>
+                                    <button
+                                        class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                        <div class="card rounded-top">
+                            <img src="img\promotion2.webp" class="card-img-top" alt="Ice Cream 1">
+                            <div class="card-body ">
+                                <h5 class="card-title text-danger ">฿379</h5>
+                                <p class="card-text fw-bold fs-5">ไอศกรีม 2 มินิ 379 บาท<br><br></p>
+
+                                <div class="about-card-layer col-12">
+                                    <div class="container ">⠀</div>
+                                    <button
+                                        class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="container my-4">
+                <h3 class=" mb-4 fw-bold fs-2">เมนูจัดส่ง</h3>
+                <div class="container mt-2 px-0 mb-4">
+                    <div class="scrolling-wrapper d-flex gap-2">
+                        <button class="menu-btn active btn btn-sm btn-outline-danger"
+                            data-target="icecream-cake">ไอศกรีมเค้ก</button>
+                        <button class="menu-btn btn btn-sm btn-outline-secondary"
+                            data-target="icecream-quart">ไอศกรีมควอท (450g)</button>
+                        <button class="menu-btn btn btn-sm btn-outline-secondary"
+                            data-target="icecream-mini-quart">ไอศกรีมมินิ ควอท (250g)</button>
+                        <button class="menu-btn btn btn-sm btn-outline-secondary" data-target="sunday-set">ซันเด
+                            เซต</button>
+                        <button class="menu-btn btn btn-sm btn-outline-secondary"
+                            data-target="icecream-scoop">ไอศกรีมสกู๊ป</button>
+                        <button class="menu-btn btn btn-sm btn-outline-secondary"
+                            data-target="icecream-small-bites">ไอศกรีมยอสงสไทล์</button>
+                        <button class="menu-btn btn btn-sm btn-outline-secondary"
+                            data-target="topping">ท็อปปิ้ง</button>
+                    </div>
+                </div>
+                <div class=" item-group active" id="icecream-cake">
+                    <div class="d-flex row">
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  item-test">
+                            <div class="card rounded-top">
+                                <img src="img\delivery-menu1.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿599</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมเค้กฮาโลวีน 1.5 ปอนด์</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  item-test">
+                            <div class="card rounded-top">
+                                <img src="img\delivery-menu2.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿499</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมเค้ก โซ สตรอว์เบอร์รี 1.5 ปอนด์</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  item-test">
+                            <div class="card rounded-top">
+                                <img src="img\delivery-menu3.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿499</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมเค้ก ทริปเปิ้ล ช็อกโก 1.5 ปอนด์</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  item-test">
+                            <div class="card rounded-top">
+                                <img src="img\delivery-menu4.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿499</h5>
+                                    <p class="card-text fw-bold fs-5">ชาเขียวมัทฉะ ช็อกโก บราวนีส์ 1.5 ปอนด์</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\delivery-menu5.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿499</h5>
+                                    <p class="card-text fw-bold fs-5">ดับเบิ้ล ชาไทย 1.5 ปอนด์<br><br></p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\delivery-menu6.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿899</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมเค้กทริปเปิ้ล เฟล์เวอร์ 3 ปอนด์</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\delivery-menu7.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿899</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมเค้กอัลติเมท ช็อกโกแลต 3 ปอนด์</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\product1.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿899</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมเค้กสตรอว์เบอร์รี ดีไลท์ 3 ปอนด์</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" item-group" id="icecream-quart">
+                    <div class="d-flex row">
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\icecream-quart\icecream-quart.webp" class="card-img-top"
+                                    alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿369</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมควอท</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" item-group" id="icecream-mini-quart">
+
+                    <div class="d-flex row">
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\icecream-mini-quart\icecream-mini-quart.webp" class="card-img-top"
+                                    alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿239</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีม มินิ ควอท</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" item-group" id="sunday-set">
+                    <div class="d-flex row">
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\sunday-set\sunday-set.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿1699</h5>
+                                    <p class="card-text fw-bold fs-5">กะทิ เปียกปูนใบเตย ซันเด เซต</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row item-group" id="icecream-scoop">
+                    <div class="d-flex row">
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\icecream-scoop\icecream-scoop.webp" class="card-img-top"
+                                    alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿569</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมสกู๊ป</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" item-group" id="icecream-small-bites">
+                    <div class="d-flex row">
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\small-bites-icecream\small-bites-icecream.webp" class="card-img-top"
+                                    alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿199</h5>
+                                    <p class="card-text fw-bold fs-5">ไอศกรีมแซนวิชช็อกโกแลต 4 ชิ้น</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" item-group" id="topping">
+                    <div class="d-flex row">
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\1.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">แฟนเวเฟอร์ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\2.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">อัลมอลด์ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\3.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">เชอรี่ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\4.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">ช็อกโกแลตชิพ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\5.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">เรนโบว์ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\6.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">มิกซ์นัท โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\7.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">โอรีโอ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\8.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">ช็อกโกแลตฟัตจ์ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\9.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">แยมสตรอว์เบอร์รี่ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\10.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">คาราเมล โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\11.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">คุกกี้ครัมเบิ้ล โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\12.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">ลูกชิด โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\13.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">ขนุน โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\14.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">แยมสับปะรด โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\15.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">แยมบลูเบอร์รี่ โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\16.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">ช็อกโกแลตบอล โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\17.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿49</h5>
+                                    <p class="card-text fw-bold fs-5">คิดส์แฟน โอเวอร์โหลด</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\18.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿60</h5>
+                                    <p class="card-text fw-bold fs-5">บราวนีส์</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-4 col-lg-3 mb-4 col-sm-6  ">
+                            <div class="card rounded-top">
+                                <img src="img\topping\19.webp" class="card-img-top" alt="Ice Cream 1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-danger ">฿95</h5>
+                                    <p class="card-text fw-bold fs-5">ลาวาเค้ก</p>
+
+                                    <div class="about-card-layer col-12">
+                                        <div class="container ">⠀</div>
+                                        <button
+                                            class="col-12 btn btn-lg btn-danger btn-outline-danger text-white rounded-pill">ดูรายละเอียด</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+ 
+    <footer class="footer">
+        <div class="container container-custom">
+            <div class="row text-center d-flex flex-column">
+
+                <div class="col-12 d-flex align-items-center gap-2 padding-l-r-custom0 ">
+                    <div class="col-lg-2 col-md-2 mb-1 col-custom">
+                        <img src="img\swensens_footer.png" alt="Swensen's Logo" class=" w-100">
+                    </div>
+
+
+                    <div class="col-7 col-lg-7 col-md-6 ">
+                        <a href="#">เกี่ยวกับเรา</a>
+                        <a href="#">สินค้าของเรา</a>
+                        <a href="#">บัตรของขวัญ</a>
+                        <a href="#">คำถามที่พบบ่อย</a>
+                        <a href="#">ข้อตกลงในการใช้งาน</a>
+                        <a href="#">นโยบายความเป็นส่วนตัว</a>
+
+                    </div>
+
+
+                    <div class="col-2 col-lg-2 col-md-3 mb-1 social-contain-custom">
+                        <div class="social-icons  d-flex ">
+                            <a href="#"><img src="img\Facebook-f_Logo-Blue-Logo.wine.svg" alt="Facebook"></a>
+                            <a href="#"><img src="img\Instagram-Logo.wine.svg" alt="Instagram"></a>
+                            <a href="#"><img src="img\Line_(software)-Logo.wine.svg" alt="LINE"></a>
+                            <a href="#"><img src="img\TikTok-Icon-White-Logo.wine.svg" alt="TikTok"></a>
+
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-2 col-md-3">
+                        <div class="social-icons  d-flex align-items-center gap-2">
+                            <a href="#"><img src="img\app-store.webp" alt="App Store"></a>
+                            <a href="#"><img src="img\google-play.webp" alt="Google Play"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col text-center">
+                    <p class="mb-0 footer-font ">เว็บไซต์นี้จัดทำขึ้นเพื่อการฝึกฝนทักษะเท่านั้น มิได้มีวัตถุประสงค์ทางการค้า</p>
+                </div>
+
+            </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        //    open Cart
+        $('.cart-icon , #openCart, #closeCart').on('click', function () {
+            $('.cart-details').toggleClass('show');
+        });
+        //    open Navbar
+        $('.navbar-toggler, #closeNav').on('click', function () {
+            $('.nav-details, .navbar-backdrop').toggleClass('show');
+        });
+
+        //    Sort Icecream Active
+        document.querySelectorAll('.menu-btn').forEach(function (button) {
+            button.addEventListener('click', function () {
+                // ลบ active ออกจากปุ่มทั้งหมด
+                document.querySelectorAll('.menu-btn').forEach(function (btn) {
+                    btn.classList.remove('active');
+                });
+
+                // เพิ่ม active ให้ปุ่มที่ถูกคลิก
+                this.classList.add('active');
+
+                // ซ่อนรายการสินค้าทั้งหมด
+                document.querySelectorAll('.item-group').forEach(function (group) {
+                    group.classList.remove('active');
+                });
+
+                // แสดงรายการสินค้าที่เกี่ยวข้องกับปุ่มที่ถูกคลิก
+                const target = this.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
