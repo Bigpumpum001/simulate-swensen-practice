@@ -82,7 +82,7 @@
 }
 
 .delivery {
-    width: 115vh;
+    /* width: 115vh; */
 }
 
 .dayPromotion {
@@ -129,12 +129,12 @@
     background-color: #101828;
     color: white;
     padding: 20px 0;
-    min-width: 115vh;
+    /* min-width: 115vh; */
 }
 
 .footer a {
     color: white;
-    margin-right: 15px;
+    /* margin-right: 15px; */
     text-decoration: none;
 }
 
@@ -371,6 +371,13 @@
     border-bottom: none;
     border-top: none;
 }
+.scrolling-wrapper {
+    gap: 0.5rem;
+  flex-wrap: wrap;          
+  justify-content: start;   
+  max-width: 100%;         
+  overflow-x: hidden;     
+}
 
 .menu-btn {
 
@@ -497,4 +504,28 @@
     .display-to-none {
         display: none;
     }
+}
+@media (max-width: 1000px) {
+  .scrolling-wrapper {
+    flex-wrap: nowrap;     /* ไม่ wrap */
+    overflow-x: auto;      /* ให้ scroll แนวนอน */
+    white-space: nowrap;   /* ป้องกันการตัดบรรทัด */
+    -webkit-overflow-scrolling: touch; /* scroll ลื่นบนมือถือ */
+  }
+
+  .scrolling-wrapper::-webkit-scrollbar {
+    display: none;         /* ซ่อน scrollbar ถ้าไม่อยากให้เห็น */
+  }
+
+  .scrolling-wrapper .menu-btn {
+    flex: 0 0 auto;        /* ให้ปุ่มขนาดคงที่ ไม่ย่อ */
+  }
+}
+.responsive-text {
+  font-size: 1.25rem; /* fs-5 */
+}
+@media (max-width: 767px) {
+  .responsive-text{
+    font-size: 1rem;
+  }
 }
